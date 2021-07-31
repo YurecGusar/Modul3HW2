@@ -1,16 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Modul3HW2.Providers.Abstractions;
 
 namespace Modul3HW2
 {
     public class Starter
     {
+        private IContactProvider _contacts;
+        public Starter(IContactProvider contactProvider)
+        {
+            _contacts = contactProvider;
+        }
+
         public void Run()
         {
-            Console.WriteLine("develop");
+            foreach (var item in _contacts.Contacts)
+            {
+                Console.WriteLine(item.FullName);
+            }
         }
     }
 }

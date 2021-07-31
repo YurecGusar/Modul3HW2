@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Modul3HW2.Providers;
+using Modul3HW2.Providers.Abstractions;
 
 namespace Modul3HW2
 {
@@ -6,8 +8,13 @@ namespace Modul3HW2
     {
         public static void Main(string[] args)
         {
-            var starter = new Starter();
-            starter.Run();
+            var serviceProvider = new ServiceCollection()
+                .AddTransient<Starter>()
+                .AddTransient<IContactProvider, ContactProvider>()
+                .BuildServiceProvider();
+
+            var start = serviceProvider.GetService<Starter>();
+            start.Run();
         }
     }
 }
