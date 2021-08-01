@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "7tuf/rtfA0q1F/MvDiaYujjT7UrCxF4oHa7wA9/wVHWVffOdB8JJOHsjvdCnbYiC+Ogqhj/QlXqudlljJi5ahw==",
+  "dgSpecHash": "RRR6JAbO/jsI46VKkb7OxIuN0Hvm76qc+2NM+a1dBDliHPg0hdsq+P9jzPEwACpcXySNE1pjnq0HZTx84sjAMQ==",
   "success": true,
   "projectFilePath": "E:\\A-Level\\YurecGusar\\Modul3HW2\\Modul3HW2\\Modul3HW2\\Modul3HW2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -51,6 +51,12 @@ namespace Modul3HW2.Providers
                     FirstName = "2чу",
                     LustName = "4ро",
                     Phone = "73841"
+                },
+                new Contact()
+                {
+                    FirstName = "qчу",
+                    LustName = "4ро",
+                    Phone = "73841"
                 }
             };
 

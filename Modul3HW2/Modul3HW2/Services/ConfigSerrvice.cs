@@ -1,10 +1,11 @@
 ﻿using System.IO;
 using Modul3HW2.Configs;
+using Modul3HW2.Services.Abstractions;
 using Newtonsoft.Json;
 
 namespace Modul3HW2.Services
 {
-    public class ConfigSerrvice : IConfigSerrvice
+    public class ConfigSerrvice : IConfigService
     {
         private void Serialize(Config config)
         {
