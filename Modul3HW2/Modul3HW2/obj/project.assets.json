@@ -378,11 +378,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\A-Level\\YurecGusar\\Modul3HW2\\Modul3HW2\\Modul3HW2\\Modul3HW2.csproj",
+      "projectUniqueName": "E:\\A-Level\\Modul3HW2\\Modul3HW2\\Modul3HW2\\Modul3HW2.csproj",
       "projectName": "Modul3HW2",
-      "projectPath": "E:\\A-Level\\YurecGusar\\Modul3HW2\\Modul3HW2\\Modul3HW2\\Modul3HW2.csproj",
+      "projectPath": "E:\\A-Level\\Modul3HW2\\Modul3HW2\\Modul3HW2\\Modul3HW2.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\A-Level\\YurecGusar\\Modul3HW2\\Modul3HW2\\Modul3HW2\\obj\\",
+      "outputPath": "E:\\A-Level\\Modul3HW2\\Modul3HW2\\Modul3HW2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

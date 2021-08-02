@@ -19,7 +19,6 @@ namespace Modul3HW2
 
         public void Run()
         {
-            /*var contacts = new ContactCollectionService<KeyValuePair<string, Contact>>();*/
             var contacts = new ContactCollection<Contact>();
             foreach (var item in _contacts.Contacts)
             {
@@ -29,6 +28,13 @@ namespace Modul3HW2
             var test = contacts.GetByKey("q");
 
             foreach (var item in test)
+            {
+                Console.WriteLine(item.FullName);
+            }
+
+            contacts.RemoveAt(0);
+
+            foreach (var item in contacts)
             {
                 Console.WriteLine(item.FullName);
             }

@@ -19,43 +19,43 @@ namespace Modul3HW2.Providers
                 new Contact()
                 {
                     FirstName = "qwe",
-                    LustName = "rty",
+                    LastName = "rty",
                     Phone = "12345"
                 },
                 new Contact()
                 {
                     FirstName = "rty",
-                    LustName = "fgh",
+                    LastName = "fgh",
                     Phone = "55432"
                 },
                 new Contact()
                 {
                     FirstName = "йцу",
-                    LustName = "фыв",
+                    LastName = "фыв",
                     Phone = "73841"
                 },
                 new Contact()
                 {
                     FirstName = "ячу",
-                    LustName = "про",
+                    LastName = "про",
                     Phone = "73841"
                 },
                 new Contact()
                 {
                     FirstName = "123",
-                    LustName = "456",
+                    LastName = "456",
                     Phone = "73841"
                 },
                 new Contact()
                 {
                     FirstName = "2чу",
-                    LustName = "4ро",
+                    LastName = "4ро",
                     Phone = "73841"
                 },
                 new Contact()
                 {
                     FirstName = "qчу",
-                    LustName = "4ро",
+                    LastName = "4ро",
                     Phone = "73841"
                 }
             };
@@ -68,7 +68,7 @@ namespace Modul3HW2.Providers
         {
             foreach (var item in contacts)
             {
-                item.FullName = $"{item.FirstName} {item.LustName}";
+                item.FullName = $"{item.FirstName} {item.LastName}";
             }
         }
     }

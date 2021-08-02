@@ -59,19 +59,62 @@ namespace Modul3HW2.Collections
             AddItem(item);
         }
 
-        public T[] GetByKey(string kay)
+        public bool RemoveAt(int index)
         {
-            var i = 0;
-            var newArray = new T[GetCapacity(kay)];
+            if (index >= Count || index < 0)
+            {
+                return false;
+            }
+
+            var lastIndext = Count - 1;
+
+            for (var i = index; i < lastIndext; i++)
+            {
+                _array[i] = _array[i + 1];
+            }
+
+            _array[lastIndext] = default(KeyValuePair<string, T>);
+            Count--;
+
+            return true;
+        }
+
+        public bool Remove(T item)
+        {
+            for (var i = 0; i < Count; i++)
+            {
+                if (_array[i].Equals(item))
+                {
+                    var isSuccess = RemoveAt(i);
+                    if (!isSuccess)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        public T[] GetByKey(string key)
+        {
+            var counter = 0;
+            var newArray = new T[GetCapacity(key)];
             foreach (var item in _array)
             {
-                if (item.Key == kay)
+                if (item.Key == key)
                 {
-                    newArray[i] = item.Value;
+                    newArray[counter] = item.Value;
+                    counter++;
                 }
             }
 
             return newArray;
+        }
+
+        public void Sort(IComparer<KeyValuePair<string, T>> comparer)
+        {
+            Array.Sort(_array, comparer);
         }
 
         public IEnumerator<T> GetEnumerator()
@@ -84,12 +127,12 @@ namespace Modul3HW2.Collections
            return GetGenericEnumerator();
         }
 
-        private int GetCapacity(string kay)
+        private int GetCapacity(string key)
         {
             var capacity = 0;
             foreach (var item in _array)
             {
-                if (item.Key == kay)
+                if (item.Key == key)
                 {
                     capacity++;
                 }
@@ -128,7 +171,7 @@ namespace Modul3HW2.Collections
 
         private void AddItem(T item)
         {
-            _array[Count] = new KeyValuePair<string, T>(item.FirstName[0].ToString(), item);
+            _array[Count] = new KeyValuePair<string, T>(item.FullName[0].ToString(), item);
             Count++;
         }
 
@@ -141,7 +184,7 @@ namespace Modul3HW2.Collections
         {
             foreach (var item in _array)
             {
-                if (!item.Equals(default(T)))
+                if (!item.Equals(default(KeyValuePair<string, T>)))
                 {
                     yield return item.Value;
                 }

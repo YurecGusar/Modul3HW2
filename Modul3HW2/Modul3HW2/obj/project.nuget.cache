@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RRR6JAbO/jsI46VKkb7OxIuN0Hvm76qc+2NM+a1dBDliHPg0hdsq+P9jzPEwACpcXySNE1pjnq0HZTx84sjAMQ==",
+  "dgSpecHash": "7WF28rwO3c/KBhUXAGW8/d5MLGgf7cnTIJlybbvoBlDcgEpjnEnRJ3V6szliZdgg7+/X9YVe9RCb8DqMx2EdPw==",
   "success": true,
-  "projectFilePath": "E:\\A-Level\\YurecGusar\\Modul3HW2\\Modul3HW2\\Modul3HW2\\Modul3HW2.csproj",
+  "projectFilePath": "E:\\A-Level\\Modul3HW2\\Modul3HW2\\Modul3HW2\\Modul3HW2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
